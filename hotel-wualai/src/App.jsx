@@ -6,6 +6,7 @@ import './ss.css'
 const API_BASE_URL = 'https://api.wasin-jira.com/api/v1';
 const API_BASEIMAGES_URL = 'https://api.wasin-jira.com';
 
+// const apiClient = {
 const apiClient = {
   async request(endpoint, options = {}) {
     const token = sessionStorage.getItem('authToken');
