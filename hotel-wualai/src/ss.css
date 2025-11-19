@@ -1,0 +1,10 @@
+@media screen {
+  .print-only { display: none !important; }
+}
+@media print {
+  .no-print   { display: none !important; }  /* ซ่อนทุกอย่างที่เป็นหน้าจอ */
+  .print-only { display: block !important; } /* แสดงเฉพาะส่วนที่จะพิมพ์ */
+  html, body { margin: 0; padding: 0; }
+  @page { size: A4; margin: 12mm; }
+  .print-sheet { page-break-before: avoid; page-break-after: avoid; page-break-inside: avoid; }
+}
