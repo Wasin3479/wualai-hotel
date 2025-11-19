@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar, Users, Star, Wifi, MapPin, Phone, Mail, CheckCircle, Eye, EyeOff, Clock, Award, Images, Copy } from 'lucide-react';
 import './ss.css'
-const API_BASE_URL = 'http://localhost:3034/api/v1';
-const API_BASEIMAGES_URL = 'http://localhost:3034';
+// const API_BASE_URL = 'http://localhost:3034/api/v1';
+// const API_BASEIMAGES_URL = 'http://localhost:3034';
+const API_BASE_URL = 'https://api.wasin-jira.com/api/v1';
+const API_BASEIMAGES_URL = 'https://api.wasin-jira.com';
 
 const apiClient = {
   async request(endpoint, options = {}) {
